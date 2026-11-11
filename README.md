@@ -1,8 +1,7 @@
-# Latihan Laravel: Parsing Data ke View
+# Tugas Praktikum Framework Laravel
 
-Tugas praktikum Pemrograman Web menggunakan framework Laravel, mengikuti
-*Modul Praktikum Framework Laravel* (Rudy Eko Prasetya, S.Kom), bagian
-**Parsing Data ke View**.
+Tugas praktikum Pemrograman Web menggunakan framework Laravel. Materi yang
+dipraktikkan meliputi Route, Controller, dan Parsing Data ke View.
 
 - **Nama:** AMARA DWI NATARIN
 - **Kelas:** 2A SISTEM INFORMASI
@@ -86,7 +85,7 @@ web-app
 5. Buka di browser:
 
    - http://localhost:8000/kalkulator
-   - http://localhost:8000/daftar/maghasiswa
+   - http://localhost:8000/daftar/mahasiswa
    - http://localhost:8000/kalkulator/segitiga
 
 > Koneksi internet diperlukan karena Bootstrap dimuat lewat CDN.
@@ -96,7 +95,8 @@ web-app
 - `/kalkulator`: isi `4` dan `5`, klik **HITUNG**, hasilnya **20**.
 - `/daftar/mahasiswa` menampilkan 4 baris: Anton, Budi, Ani, Sinta.
 - `/kalkulator/segitiga`: isi alas `10` dan tinggi `6`, klik **HITUNG**, hasilnya **30**.
-  ## Screenshot
+
+## Screenshot
 
 ### 1. Kalkulator Perkalian, sebelum dihitung (`/kalkulator`)
 ![Kalkulator Awal](screenshots/kalkulator-awal.png)
