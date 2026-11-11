@@ -25,4 +25,19 @@ class KalkulatorController extends Controller
         //render ke view 
         return view('kalkulator',$data); 
         }
+        public function segitiga() {
+    $data['judul'] = 'Luas Segitiga';
+    $data['alas'] = 0;
+    $data['tinggi'] = 0;
+    $data['hasil'] = 0;
+    return view('segitiga', $data);
+}
+
+    public function hitungSegitiga(Request $request) {
+        $data['judul'] = 'Luas Segitiga';
+        $data['alas'] = $request->input('alas');
+        $data['tinggi'] = $request->input('tinggi');
+        $data['hasil'] = 0.5 * $data['alas'] * $data['tinggi'];
+        return view('segitiga', $data);
+}
 }
