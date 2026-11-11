@@ -1,5 +1,8 @@
 <?php
 
+//import controller mahasiswa
+use App\Http\Controllers\MahasiswaController;
+
 //import Controller Kalkulator 
 use App\Http\Controllers\KalkulatorController; 
 
@@ -35,3 +38,12 @@ Route::get('/kalkulator',[KalkulatorController::class, 'home']);
 
 //route untuk proses perhitungan 
 Route::post('/kalkulator/proses',[KalkulatorController::class, 'proses']);
+
+//route ke controller mahasiswa
+Route::get('/daftar/mahasiswa', [MahasiswaController::class, 'index']);
+
+//route untuk menampilkan form luas segitiga
+Route::get('/kalkulator/segitiga', [KalkulatorController::class, 'segitiga']);
+
+//route untuk memproses perhitungan luas segitiga
+Route::post('/kalkulator/segitiga/proses', [KalkulatorController::class, 'hitungSegitiga']);
