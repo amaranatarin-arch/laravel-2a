@@ -4,9 +4,9 @@ Tugas praktikum Pemrograman Web menggunakan framework Laravel, mengikuti
 *Modul Praktikum Framework Laravel* (Rudy Eko Prasetya, S.Kom), bagian
 **Parsing Data ke View**.
 
-- **Nama:** (isi nama kamu)
-- **Kelas:** (isi kelas)
-- **NIM/NIS:** (isi nomor induk)
+- **Nama:** (AMARA DWI NATARIN)
+- **Kelas:** (2A SISTEM INFORMASI)
+- **NPM:** (2513020050)
 
 ## Deskripsi
 
@@ -93,6 +93,23 @@ web-app
 - `/daftar/mahasiswa` menampilkan 4 baris: Anton, Budi, Ani, Sinta.
 - `/kalkulator/segitiga`: isi alas `10` dan tinggi `6`, klik **HITUNG**,
   hasilnya **30**.
+
+  ## Screenshot
+
+### 1. Kalkulator Perkalian, sebelum dihitung (`/kalkulator`)
+![Kalkulator Awal](screenshots/kalkulator-awal.png)
+
+### 2. Kalkulator Perkalian, setelah dihitung
+![Kalkulator Hasil](screenshots/kalkulator-hasil.png)
+
+### 3. Daftar Mahasiswa (`/daftar/mahasiswa`)
+![Daftar Mahasiswa](screenshots/mahasiswa.png)
+
+### 4. Kalkulator Segitiga, sebelum dihitung (`/kalkulator/segitiga`)
+![Segitiga Awal](screenshots/segitiga-awal.png)
+
+### 5. Kalkulator Segitiga, setelah dihitung
+![Segitiga Hasil](screenshots/segitiga-hasil.png)
 
 ## Referensi
 
