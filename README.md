@@ -4,9 +4,9 @@ Tugas praktikum Pemrograman Web menggunakan framework Laravel, mengikuti
 *Modul Praktikum Framework Laravel* (Rudy Eko Prasetya, S.Kom), bagian
 **Parsing Data ke View**.
 
-- **Nama:** (AMARA DWI NATARIN)
-- **Kelas:** (2A SISTEM INFORMASI)
-- **NPM:** (2513020050)
+- **Nama:** AMARA DWI NATARIN
+- **Kelas:** 2A SISTEM INFORMASI
+- **NPM:** 2513020050
 
 ## Deskripsi
 
@@ -83,7 +83,8 @@ web-app
 
 5. Buka di browser:
 
-   - http://localhost:8000/daftar/mahasiswa
+   - http://localhost:8000/kalkulator
+   - http://localhost:8000/daftar/maghasiswa
    - http://localhost:8000/kalkulator/segitiga
 
 > Koneksi internet diperlukan karena Bootstrap dimuat lewat CDN.
