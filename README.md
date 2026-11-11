@@ -6,16 +6,21 @@ Tugas praktikum Pemrograman Web menggunakan framework Laravel, mengikuti
 
 - **Nama:** AMARA DWI NATARIN
 - **Kelas:** 2A SISTEM INFORMASI
-- **NPM:** 2513020050
+- **Repository:** https://github.com/amaranatarin-arch/laravel-2a.git
 
 ## Deskripsi
 
 Aplikasi sederhana yang berisi dua halaman latihan:
+## Deskripsi
 
-1. **Daftar Mahasiswa** (`/daftar/mahasiswa`): menampilkan data mahasiswa
-   (Nama, Alamat, Gender) dalam bentuk tabel.
-2. **Kalkulator Luas Segitiga** (`/kalkulator/segitiga`): form untuk
-   menghitung luas segitiga dari alas dan tinggi (`1/2 x alas x tinggi`).
+Aplikasi sederhana yang berisi tiga halaman:
+
+1. **Kalkulator Perkalian** (`/kalkulator`): praktik dari materi. Form untuk
+   mengalikan dua angka.
+2. **Daftar Mahasiswa** (`/daftar/mahasiswa`): latihan soal. Menampilkan data
+   mahasiswa (Nama, Alamat, Gender) dalam bentuk tabel.
+3. **Kalkulator Luas Segitiga** (`/kalkulator/segitiga`): latihan soal. Form
+   untuk menghitung luas segitiga (`1/2 x alas x tinggi`).
 
 Data dikirim dari Controller ke View menggunakan array `$data`, lalu
 ditampilkan dengan Blade (`{{ }}` dan `@foreach`).
@@ -31,12 +36,11 @@ ditampilkan dengan Blade (`{{ }}` dan `@foreach`).
 
 | Method | URL | Controller | Fungsi | Keterangan |
 |--------|-----|------------|--------|------------|
+| GET | `/kalkulator` | `KalkulatorController` | `home` | Form kalkulator perkalian (materi) |
+| POST | `/kalkulator/proses` | `KalkulatorController` | `proses` | Proses perkalian (materi) |
 | GET | `/daftar/mahasiswa` | `MahasiswaController` | `index` | Tabel daftar mahasiswa |
 | GET | `/kalkulator/segitiga` | `KalkulatorController` | `segitiga` | Form luas segitiga |
 | POST | `/kalkulator/segitiga/proses` | `KalkulatorController` | `hitungSegitiga` | Proses hitung luas |
-
-Route dari materi sebelumnya (`/`, `/about`, `/web`, `/profil/{nama}`,
-`/biodata`, `/kalkulator`) masih ada di `routes/web.php`.
 
 ## Struktur File Penting
 
@@ -48,8 +52,9 @@ web-app
  |- public/css
  |    |- style.css                   (tema soft green + cream)
  |- resources/views
- |    |- mahasiswa.blade.php         (baru)
- |    |- segitiga.blade.php          (baru)
+ |    |- kalkulator.blade.php        (materi)
+ |    |- mahasiswa.blade.php         (latihan)
+ |    |- segitiga.blade.php          (latihan)
  |- routes
       |- web.php                     (ditambah 3 route)
 ```
@@ -83,7 +88,7 @@ web-app
 
 5. Buka di browser:
 
-   - http://localhost:8000/
+   - http://localhost:8000/kalkulator
    - http://localhost:8000/daftar/maghasiswa
    - http://localhost:8000/kalkulator/segitiga
 
@@ -91,10 +96,9 @@ web-app
 
 ## Contoh Pengujian
 
+- `/kalkulator`: isi `4` dan `5`, klik **HITUNG**, hasilnya **20**.
 - `/daftar/mahasiswa` menampilkan 4 baris: Anton, Budi, Ani, Sinta.
-- `/kalkulator/segitiga`: isi alas `10` dan tinggi `6`, klik **HITUNG**,
-  hasilnya **30**.
-
+- `/kalkulator/segitiga`: isi alas `10` dan tinggi `6`, klik **HITUNG**, hasilnya **30**.
   ## Screenshot
 
 ### 1. Kalkulator Perkalian, sebelum dihitung (`/kalkulator`)
