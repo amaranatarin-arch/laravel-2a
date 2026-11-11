@@ -10,9 +10,6 @@ Tugas praktikum Pemrograman Web menggunakan framework Laravel, mengikuti
 
 ## Deskripsi
 
-Aplikasi sederhana yang berisi dua halaman latihan:
-## Deskripsi
-
 Aplikasi sederhana yang berisi tiga halaman:
 
 1. **Kalkulator Perkalian** (`/kalkulator`): praktik dari materi. Form untuk
