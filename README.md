@@ -83,7 +83,7 @@ web-app
 
 5. Buka di browser:
 
-   - http://localhost:8000/kalkulator
+   - http://localhost:8000/
    - http://localhost:8000/daftar/maghasiswa
    - http://localhost:8000/kalkulator/segitiga
 
