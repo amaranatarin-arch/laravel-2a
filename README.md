@@ -1,3 +1,108 @@
+# Latihan Laravel: Parsing Data ke View
+
+Tugas praktikum Pemrograman Web menggunakan framework Laravel, mengikuti
+*Modul Praktikum Framework Laravel* (Rudy Eko Prasetya, S.Kom), bagian
+**Parsing Data ke View**.
+
+- **Nama:** (isi nama kamu)
+- **Kelas:** (isi kelas)
+- **NIM/NIS:** (isi nomor induk)
+
+## Deskripsi
+
+Aplikasi sederhana yang berisi dua halaman latihan:
+
+1. **Daftar Mahasiswa** (`/daftar/mahasiswa`): menampilkan data mahasiswa
+   (Nama, Alamat, Gender) dalam bentuk tabel.
+2. **Kalkulator Luas Segitiga** (`/kalkulator/segitiga`): form untuk
+   menghitung luas segitiga dari alas dan tinggi (`1/2 x alas x tinggi`).
+
+Data dikirim dari Controller ke View menggunakan array `$data`, lalu
+ditampilkan dengan Blade (`{{ }}` dan `@foreach`).
+
+## Teknologi
+
+- PHP 8.3 atau lebih baru
+- Laravel 13
+- Composer
+- Bootstrap 5 (CDN) dan CSS buatan sendiri (tema soft green dan cream)
+
+## Daftar Halaman (Route)
+
+| Method | URL | Controller | Fungsi | Keterangan |
+|--------|-----|------------|--------|------------|
+| GET | `/daftar/mahasiswa` | `MahasiswaController` | `index` | Tabel daftar mahasiswa |
+| GET | `/kalkulator/segitiga` | `KalkulatorController` | `segitiga` | Form luas segitiga |
+| POST | `/kalkulator/segitiga/proses` | `KalkulatorController` | `hitungSegitiga` | Proses hitung luas |
+
+Route dari materi sebelumnya (`/`, `/about`, `/web`, `/profil/{nama}`,
+`/biodata`, `/kalkulator`) masih ada di `routes/web.php`.
+
+## Struktur File Penting
+
+```
+web-app
+ |- app/Http/Controllers
+ |    |- MahasiswaController.php     (baru)
+ |    |- KalkulatorController.php    (ditambah segitiga + hitungSegitiga)
+ |- public/css
+ |    |- style.css                   (tema soft green + cream)
+ |- resources/views
+ |    |- mahasiswa.blade.php         (baru)
+ |    |- segitiga.blade.php          (baru)
+ |- routes
+      |- web.php                     (ditambah 3 route)
+```
+
+## Cara Menjalankan
+
+1. Masuk ke folder project:
+
+   ```
+   cd web-app
+   ```
+
+2. Install dependency (jika folder `vendor` belum ada):
+
+   ```
+   composer install
+   ```
+
+3. Siapkan file environment (jika belum ada `.env`):
+
+   ```
+   copy .env.example .env
+   php artisan key:generate
+   ```
+
+4. Jalankan server:
+
+   ```
+   php artisan serve
+   ```
+
+5. Buka di browser:
+
+   - http://localhost:8000/daftar/mahasiswa
+   - http://localhost:8000/kalkulator/segitiga
+
+> Koneksi internet diperlukan karena Bootstrap dimuat lewat CDN.
+
+## Contoh Pengujian
+
+- `/daftar/mahasiswa` menampilkan 4 baris: Anton, Budi, Ani, Sinta.
+- `/kalkulator/segitiga`: isi alas `10` dan tinggi `6`, klik **HITUNG**,
+  hasilnya **30**.
+
+## Referensi
+
+- Modul Praktikum Framework Laravel, Rudy Eko Prasetya, S.Kom
+- Dokumentasi Laravel: https://laravel.com/docs
+- Dokumentasi Bootstrap: https://getbootstrap.com/docs/5.3
+
+---
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
