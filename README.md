@@ -4,7 +4,7 @@ Tugas praktikum Pemrograman Web menggunakan framework Laravel. Materi yang
 dipraktikkan meliputi Route, Controller, dan Parsing Data ke View.
 
 - **Nama:** AMARA DWI NATARIN
-- **Kelas:** 2A SISTEM INFORMASI
+- **NPM:** 2513020050
 - **Repository:** https://github.com/amaranatarin-arch/laravel-2a.git
 
 ## Deskripsi
