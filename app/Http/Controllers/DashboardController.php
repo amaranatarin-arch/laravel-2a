@@ -12,8 +12,4 @@ class DashboardController extends Controller
         return view('home', $data);
     }
 
-    public function gallery() {
-        $data['judul'] = 'Laman Gallery';
-        return view('gallery', $data);
-    }
 }
