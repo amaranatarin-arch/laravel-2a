@@ -53,3 +53,6 @@ Route::post('/kalkulator/segitiga/proses', [KalkulatorController::class, 'hitung
 
 //route ke controller Dashboard
 Route::get('/dashboard', [DashboardController::class, 'home']);
+
+//route ke controller Dashboard untuk menampilkan gallery
+Route::get('/gallery', [DashboardController::class, 'gallery']);
