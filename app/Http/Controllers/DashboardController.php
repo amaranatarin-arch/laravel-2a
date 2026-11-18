@@ -9,7 +9,11 @@ class DashboardController extends Controller
     public function home() {
         $data['judul'] = 'Laman Home';
         $data['isi'] = 'Lorem ipsum dolor sit amet';
-        return view('dashboard', $data);
+        return view('home', $data);
     }
 
+    public function gallery() {
+        $data['judul'] = 'Laman Gallery';
+        return view('gallery', $data);
+    }
 }
