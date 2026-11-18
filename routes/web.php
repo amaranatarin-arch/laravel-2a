@@ -1,5 +1,8 @@
 <?php
 
+//import Controller Dashboard
+use App\Http\Controllers\DashboardController;
+
 //import controller mahasiswa
 use App\Http\Controllers\MahasiswaController;
 
@@ -47,3 +50,6 @@ Route::get('/kalkulator/segitiga', [KalkulatorController::class, 'segitiga']);
 
 //route untuk memproses perhitungan luas segitiga
 Route::post('/kalkulator/segitiga/proses', [KalkulatorController::class, 'hitungSegitiga']);
+
+//route ke controller Dashboard
+Route::get('/dashboard', [DashboardController::class, 'home']);
