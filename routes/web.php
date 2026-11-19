@@ -1,5 +1,8 @@
 <?php
 
+//import controller EmployeController
+use App\Http\Controllers\EmployeController;
+
 //import Controller Dashboard
 use App\Http\Controllers\DashboardController;
 
@@ -56,3 +59,6 @@ Route::get('/dashboard', [DashboardController::class, 'home']);
 
 //route ke controller Dashboard untuk menampilkan gallery
 Route::get('/gallery', [DashboardController::class, 'gallery']);
+
+//route ke controller employe
+Route::get('/employe',[EmployeController::class, 'index']);
