@@ -68,3 +68,9 @@ Route::get('/employe/create',[EmployeController::class, 'create']);
 
 //route untuk menyimpan data pegawai ke database
 Route::post('/employe/store',[EmployeController::class, 'store']);
+
+//route untuk menampilkan form edit data pegawai
+Route::get('/employe/edit/{employe}',[EmployeController::class, 'show']);
+
+//route untuk menyimpan perubahan data pegawai ke database
+Route::put('/employe/{employe}',[EmployeController::class, 'update']);
