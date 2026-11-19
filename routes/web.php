@@ -74,3 +74,6 @@ Route::get('/employe/edit/{employe}',[EmployeController::class, 'show']);
 
 //route untuk menyimpan perubahan data pegawai ke database
 Route::put('/employe/{employe}',[EmployeController::class, 'update']);
+
+//route untuk menghapus data pegawai dari database
+Route::delete('/employe/{employe}',[EmployeController::class, 'destroy']);
