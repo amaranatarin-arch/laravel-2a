@@ -19,7 +19,7 @@
         <td>{{$row->gender}}</td>
         <td>{{$row->gaji}}</td>
         <td>
-            <button>Edit</button> | <button>Delete</button>
+            <a href="/employe/edit/{{$row->id}}"><button>Edit</button></a> | <button>Delete</button>
         </td>
     </tr>
     @endforeach
