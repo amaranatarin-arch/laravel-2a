@@ -62,3 +62,9 @@ Route::get('/gallery', [DashboardController::class, 'gallery']);
 
 //route ke controller employe
 Route::get('/employe',[EmployeController::class, 'index']);
+
+//menampilkan form tambah data pegawai
+Route::get('/employe/create',[EmployeController::class, 'create']);
+
+//route untuk menyimpan data pegawai ke database
+Route::post('/employe/store',[EmployeController::class, 'store']);
