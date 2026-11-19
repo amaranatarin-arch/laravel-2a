@@ -19,8 +19,15 @@
         <td>{{$row->gender}}</td>
         <td>{{$row->gaji}}</td>
         <td>
-            <a href="/employe/edit/{{$row->id}}"><button>Edit</button></a> | <button>Delete</button>
-        </td>
+    <a href="/employe/edit/{{$row->id}}"><button>Edit</button></a> |
+    <form method="post" action="/employe/{{$row->id}}" style="display: inline-block;">
+        @method('delete')
+        @csrf
+        <button>
+            Delete
+        </button>
+    </form>
+</td>
     </tr>
     @endforeach
 </table>
