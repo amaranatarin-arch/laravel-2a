@@ -19,7 +19,7 @@ body {
 }
 .banner {
     height: 200px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(https://picsum.photos/800/200);
     background-size: cover;
     border-top: 5px solid navy;
     border-bottom: 5px solid skyblue;
