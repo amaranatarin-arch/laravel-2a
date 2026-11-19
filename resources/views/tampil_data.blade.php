@@ -18,7 +18,7 @@
         <td>{{$row->alamat}}</td>
         <td>{{$row->gender}}</td>
         <td>{{$row->gaji}}</td>
-        <td>
+        <td style="white-space: nowrap;">
     <a href="/employe/edit/{{$row->id}}"><button>Edit</button></a> |
     <form method="post" action="/employe/{{$row->id}}" style="display: inline-block;">
         @method('delete')
