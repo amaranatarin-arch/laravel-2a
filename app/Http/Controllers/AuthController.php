@@ -32,4 +32,11 @@ class AuthController extends Controller
             return redirect('/');
         }
     }
+
+        public function logout(Request $request) {
+        //hapus semua session
+        $request->session()->flush();
+        //kembali ke login
+        return redirect('/');
+    }
 }
