@@ -1,5 +1,8 @@
 <?php
 
+//load controller
+use App\Http\Controllers\AuthController;
+
 //import controller EmployeController
 use App\Http\Controllers\EmployeController;
 
@@ -82,3 +85,6 @@ Route::put('/employe/{employe}',[EmployeController::class, 'update']);
 
 //route untuk menghapus data pegawai dari database
 Route::delete('/employe/{employe}',[EmployeController::class, 'destroy']);
+
+//route untuk menampilkan form login
+Route::post('/login',[AuthController::class, 'cek']);
