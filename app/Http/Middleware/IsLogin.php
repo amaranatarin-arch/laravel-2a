@@ -18,7 +18,7 @@ class IsLogin
         //cek apakah ada session logged_in
         if(!session('logged_in')) {
             //jika tidak ada maka kembali ke url sebelumnya
-            return redirect()->back();
+            return redirect('/');
         }
         return $next($request);
     }
