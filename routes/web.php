@@ -88,3 +88,6 @@ Route::delete('/employe/{employe}',[EmployeController::class, 'destroy']);
 
 //route untuk menampilkan form login
 Route::post('/login',[AuthController::class, 'cek']);
+
+//route untuk logout
+Route::get('/logout',[AuthController::class, 'logout']);
