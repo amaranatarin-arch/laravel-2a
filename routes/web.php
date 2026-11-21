@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 //import controller
 use App\Http\Controllers\Web;
 
-Route::get('/', function () {
+//Route::get('/', function () {
     //return view('welcome');
-    return "Haloo Nama ku adalah LARAVEL, salam kenal";
+    //return "Haloo Nama ku adalah LARAVEL, salam kenal";
+//});
+
+//agar langsung masuk login
+Route::get('/', function(){
+    return view('login');
 });
 
 //route baru 
