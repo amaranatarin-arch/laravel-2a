@@ -239,9 +239,6 @@ mengarah ke `/employe/edit/{id}`.
 Form edit data:
 ![Edit Data](screenshots/crud-edit.png)
 
-Setelah data diubah:
-![Setelah Edit](screenshots/crud-setelah-edit.png)
-
 ---
 
 ## 7. Membuat CRUD Hapus Data
@@ -294,13 +291,13 @@ Hasil `php artisan migrate`:
 ![Terminal Migrate](screenshots/migration-terminal.png)
 
 Struktur tabel `users`:
-![Struktur Users](screenshots/migration-struktur-users.png)
+![Struktur Users](screenshots/migration-structure-users.png)
 
 Daftar tabel di database `company`:
 ![Daftar Tabel](screenshots/migration-daftar-tabel.png)
 
 Struktur tabel `employes`:
-![Struktur Employes](screenshots/migration-struktur-employes.png)
+![Struktur Employes](screenshots/migration-structure-employes.png)
 
 Isi tabel `users` (hasil seeder):
 ![Data Users](screenshots/migration-data-users.png)
